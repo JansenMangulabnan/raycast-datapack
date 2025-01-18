@@ -1,0 +1,1 @@
+playsound entity.warden.sonic_boom ambient @a ^ ^ ^5 1.0 1.0
