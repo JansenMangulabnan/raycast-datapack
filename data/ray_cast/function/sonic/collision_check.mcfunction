@@ -1,7 +1,7 @@
-execute if entity @e[distance=..2] run function laser:hit_entity
-execute positioned ^ ^ ^.3 unless block ~ ~ ~ air run function laser:hit_block
+execute if entity @e[distance=..2] run function ray_cast:sonic/hit_entity
+execute positioned ^ ^ ^.3 unless block ~ ~ ~ air run function ray_cast:sonic/hit_block
 
-execute if block ~ ~ ~ air positioned ^ ^ ^.3 run function laser:collision_check
+execute unless block ~ ~ ~ void_air positioned ^ ^ ^.3 run function ray_cast:sonic/collision_check
 
 
 # check block before entity
